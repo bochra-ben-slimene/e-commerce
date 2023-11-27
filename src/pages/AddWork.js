@@ -10,11 +10,9 @@ export default function AddWork() {
   const saveWork = () => {
     let db = getDatabase();
     let myref = ref(db, "MyProducts/" +
-      Title.slice(0, 5) + Math.floor(Math.random() * 100));
+      Title.slice(0,3) + Math.floor(Math.random() * 100));
 
-    if (Title !== "" && Description !== "" && PhotosURL !== "")
-
-
+    if (Title !== "" && Description !== "" && PhotosURL !== ""){
       set(myref, {
         TITLE: Title,
         DESC: Description,
@@ -27,7 +25,10 @@ export default function AddWork() {
     setDescription('');
     setPrice('');
     setPhotoURL('');
-
+    }
+    else{
+      alert("EMPTY INPUT ....")
+    }
   }
   return (
     <div>
