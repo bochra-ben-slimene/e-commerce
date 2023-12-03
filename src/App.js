@@ -12,7 +12,8 @@ const [email,setEmail] = useState("");
 const [password,setPassword] = useState("");
 
 
-const loginFn = () => {
+const loginFn = (e) => {
+  e.preventDefault();
   console.log(email,password);
   signInWithEmailAndPassword(auth,email,password)
   .catch((err) =>{

@@ -29,16 +29,16 @@ export default function Lazy() {
   }, []);
 
   return (
-    <div className='container d-flex justify-content-between flex-wrap'>
+    <div className=' card_produit_home container-fluid  row d-flex m-0 justify-content-center'>
       {cards &&
          cards.map((produit, index) => (
          
-            <div key={index} data-aos= "fade-up" className="card" style={{ width: '18rem' }}>
+            <div key={index} data-aos= "fade-up" className="card m-2 p-0  col-12 col-sm-6 col-md-4 col-lg-3" >
               <img src={produit[1].URL} className="card-img-top" alt="..." />
-              <div className="card-body">
+              <div className="card-body d-flex flex-column justify-content-between">
                 <h5 className="card-title">{produit[1].TITLE}</h5>
                 <p className="card-text">{produit[1].DESC}</p>
-                <p>{produit[1].PRICE}</p>
+                <p>{produit[1].Price} DT</p>
                 <Link className="btn btn-success" to="/Card" state={{ data : produit[1] }} >
              Order now
             </Link>

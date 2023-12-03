@@ -32,8 +32,8 @@ export default function AddWork() {
   }
   return (
     <div>
-      <div className='mt-5'>
-        <h1 className='text-primary'>Add new work</h1>
+      <div className='mt-5 page_add_work'>
+        <h1 className='text'>Add new work</h1>
         <form id='myForm' className='mt-5'>
           <div className="form-floating mb-3">
             <input required onChange={(e) => setTitle(e.target.value)} type="text" className="form-control" id="floatingInput" placeholder="title of picture" />

@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.card_produit_home .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.contact_home {
+  background-color: #b5d1b6;
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding: 30px;
+}
+.contact_home h1.titre {
+  color: #FF5722;
+    font-family: cursive;
+    -webkit-text-stroke-width: thin;
+}
+
+nav.navbar.navbar-dark {
+  background-color: #FF5722;
+}
+
+button.navbar-toggler {
+  background: #6D4C41;
+}
+
+div#navbarToggleExternalContent {
+  background-color: #6D4C41;
+}
+
+.btn_dashbord{
+  background-color: #FFF59D;
+  color: orange;
+  padding: 8px 30px;
+  border: 1px solid orange;
+  border-radius: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.dashboard ul.nav{
+    background-color: #62045d;
+}
+
+.dashboard .nav-link.active {
+    border-bottom: 3px solid #f3a4bf;
+    margin-bottom: 5px;
+    color: #f3a4bf;
+}
+
+.dashboard button.nav-link {
+    color: #c9e8ff;
+}
+.dashboard a.nav-link {
+  color: #c9e8ff;
+}
+
+.dashboard a.nav-link , .dashboard button.nav-link , .dashboard button.btn.btn-link {
+  font-size: 16px;
+  font-family: cursive;
+  text-transform: capitalize;
+}
+
+.dashboard button.btn.btn-link {
+    background-color: #c9e8ff;
+    padding: 0 28px;
+    margin-left: 125px;
+    height: 40px;
+    margin-top: 4px;
+    color: #62045d;
+}
+.page_add_work .text , .loginContainer .titre_login{
+    color: #62045d;
+    font-family: cursive;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: thin;
+}
+
+.loginContainer {
+  background-color: #62045d;
+  padding: 22px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 67px !important;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.loginContainer .mb-3 {
+  text-align: left;
+}
+
+.loginContainer label{
+  font-size: 16px;
+  font-family: cursive;
+  text-transform: capitalize;
+  color: #c9e8ff;
+
+}
+
+.loginContainer .titre_login{
+  color: #c9e8ff !important;
+
+}
